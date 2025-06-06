@@ -3,8 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <h1>Xin chào</h1>
-  <body></body>
+  <body class="form-body">
+    <div class="form-register">
+      <h1>REGISTER</h1>
+      <form action="" autocomplete="off">
+        <div>
+          <label>
+            <span class="form-label">Display Name</span>
+            <input
+              type="text"
+              name="display-name"
+              placeholder="Display Name..."
+              required
+              spellcheck="true"
+              autofocus
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email..."
+              spellcheck="true"
+              required
+              autofocus
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label">Phone Number</span>
+            <input
+              type="tel"
+              name="phone-number"
+              placeholder="Phone Number..."
+              spellcheck="true"
+              required
+              autofocus
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label">Password</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+              autofocus
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label">Confirm Password</span>
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+              autofocus
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label class="gender">
+            <span class="form-label">Gender</span>
+          </label>
+
+          <label> <input type="radio" name="gender" value="male" />Male </label>
+          <label>
+            <input type="radio" name="gender" value="female" />Female
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other" />Other
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label">Date of Birth</span>
+            <input type="date" name="dob" class="box" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label"> Address</span>
+            <input
+              type="text"
+              name="address"
+              placeholder="Address..."
+              class="box"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="form-label"> Profile Picture</span>
+            <img
+              src="https://adaptcommunitynetwork.org/wp-content/uploads/2023/09/person-placeholder.jpg"
+              alt=""
+            />
+            <input type="file" name="avatar" accept="image/*" hidden />
+          </label>
+        </div>
+        <div>
+          <label class="communication">
+            <span class="form-label"> Communication Preferences</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="communication"
+              value="subscribe-newletter"
+            />
+            <span class="com">Subscribe to Newsletter</span>
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="communication" value="receive-email" />
+            <span class="com">Receive Promotional Emails</span>
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="communication" value="get-update" />
+            <span class="com">Get Product Updates</span>
+          </label>
+        </div>
+        <div>
+          <button type="submit" class="box" value="register">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
