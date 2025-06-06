@@ -1,0 +1,65 @@
+/* Phần chung */
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold; 
+    text-align: center;     
+}
+
+.form-body {
+    background-color: #358a7bbe;
+   font-family: "Inter", sans-serif;
+}
+
+.form-register {
+    max-width: 600px;
+    min-height: 100px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding:35px 70px;
+    margin: 70px auto;
+    border-radius: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0 10px;
+    cursor: pointer;
+}
+
+.box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width:20%;
+    border-radius: 50%;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.com {
+    line-height: 1.7;
+}
+
+button {
+    background-color: #358a7bbe;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
